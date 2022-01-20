@@ -1,0 +1,57 @@
+Metadata_category,Instructions,HMS MicRoN,HMS MicRoN,HMS MicRoN
+Microscope_name,Enter a name that users will recognize,Oscar,Spinster,Athena
+Widefield,"Is microscope capable of widefield imaging? Type ""YES"" or ""NO""",YES,YES,NO
+Sconfocal,"Is microscope capable of spinning disk confocal imaging? Type ""YES"" or ""NO""",NO,YES,NO
+Pconfocal,"Is microscope capable of point scanning confocal imaging? Type ""YES"" or ""NO""",NO,NO,YES
+Mphoton,"Is microscope capable of Multiphoton imaging? Type ""YES"" or ""NO""",NO,NO,NO
+Z-stack,"Is microscope capable of z-stacks? Type ""YES"" or ""NO""",YES,YES,YES
+Tile_scan,"Is microscope capable of tile scans/multipoint imaging? Type ""YES"" or ""NO""",YES,YES,YES
+Multicolor,"Is the microscope is capable of multicolor imaging? Type ""YES"" or ""NO""",YES,YES,YES
+Manufacturer-Model,Manufacturer and model for the microscope,Nikon Ti inverted microscope,Nikon Ti inverted microscope,Fully motorized Olympus IX83 inverted stand
+Stage_MF,Manufacturer and model for the stage,Prior ProScanIII motorized stage,Nikon Motorized Stage,Prior ProScanIII motorized stage
+Focusing_Device_MF_opt,"Manufacturer for the focusing device, if multiple, separate by semicolons",Nosepiece drive,Physik Instrument Piezo Z motor,Nosepiece Drive
+Focusing_maintenence_hardware,Hardware capabilities for maintenance,,Perfect Focus System (PSF) v2,
+Ex_Filter_wheel_MF,Manufacturer for the excitation filter wheel,Sutter Instrument Lambda 10-3,,
+Em_Filter_wheel_MF_and_pos,Manufacturer for the emission filter wheel and its position in light path separated by a semicolon,LUDL mac5000; in front of the camera,,
+Illumination_Shutter_MF,Manufacturer for illumination shutter,Sutter Instrument LB101Q-219,,
+Environmental_chamber_MF,Manufacturer/model of incubators or enclosures for environmental and temperature control,,"Okolab custom cage incubator with black panels, a vibration free humidity module, Bold Line temperature and digital  gas control, equipped with temperature sensor at the sample  and H201-K-FRAME gas chamber. ",
+Scan_unit_MF,Manufacturer and model for scan unit,,Yokogawa CSU-W1 Spinning disk,Olympus FV3000
+Scanning_mechanism_opts,"Options for scanning mechanism (e.g., galvo or resonant scanner)",,,galvo
+Pinhole_diameter,"Diameter in microns, if no pinhole, leave blank",,50 um,
+Emission_wavelength_range_selection,"Is microscope is capable of wavelength selection? Type ""YES"" or ""NO""",NO,NO,YES
+Light_source_nonLaser,Widefield light source (e.g. SOLA LED Light engine),Lumencor SOLA 365 LED light engine,Lumencor Sola 395 LED Light Engine,
+Laser_lines_type_power,"Laser line options, separated by semicolons",,488 nm solid state 100mW at the fiber tip; 514 nm solid state 40 mW at the laser tip; 561 nm DPSS 100 mW at the fiber tip; 640 nm solid state 60mW at the tip of the fiber,"405 nm 50mW solid state diode, 445 nm 75 mW solid state diode, 488 nm 20 mW solid state diode, 514 nm 40mW solid state  diode, 561 nm 20 mW DPSS, 640 nm 40 mW solid state diode"
+Laser_Modulation,"Laser modulation options, separated by semicolons",,Directly modulated,AOTF
+Laser_launch_MF,Manufacturer for laser launch,,Toptica iChrome MLE,Olympus FV3000 laser AOTF combiner
+Objective_1_IM,"Objective information and immersion media, separated by a semicolon",Plan Apo; 20x; 0.75; Ph2 DM; Air,Plan Apo λ 20x/0.75 DIC I,Uplan S Apo 4x/0.16 air
+Objective_2_IM,Objective Correction; magnification; Numerical aperture; application; immersion media,Plan Fluor; 4x; 0.13; NA; Air,Plan Fluor 40x/1.3 Oil DIC H/N2;  Cargille Type 37 immersion oil,Uplan S Apo 10x/0.4 Air
+Objective_3_IM,Example: Plan Apo Lambda; 10x; 0.45; DIC N1; Air,Plan Apo Lambda; 10x; 0.45; DIC N1; Air,Plan Apo λ 60x/1.4 Oil DIC;  Cargille Type 37 immersion oil,Uplan Apo 20x/0.75 Air
+Objective_4_IM,,Plan Fluor; 40X; 1.30; DIC N2; Nikon Type A immersion oil,Plan Apo λ 100x/1.45 Oil DIC; Cargille Type 37 immersion oil," Uplan Apo 40x/1.3 oil;  Olympus Type F immersion oil, 30CC"
+Objective_5_IM,,Plan Apo Lambda; 60x; 1.40; Ph3 DM; Nikon Type A immersion oil,,"Plan N Apo 60x/1.4 oil;  Olympus Type F immersion oil, 30CC"
+Objective_6_IM,,Plan Apo Lambda; 100x; 1.45; Ph3 DM; Nikon Type A immersion oil,,
+Objective_7_IM,,,,
+Objective_8_IM,,,,
+Objective_9_IM,,,,
+Objective_10_IM,,,,
+Other_filters,"Additional filter options, separated by semicolon",ND4; ND8,,10% ND filter; no ND filter
+Optical_config_1,Follow one of these patterns:,CFP; LED; Lumencore SOLA 365 Light Engine; Chroma ET430/24x; Chroma 69008bs; Chroma ET470/24m,Green (488-laser); laser; 488 nm laser solid state 100mW at the fiber tip; None; Semrock Di01-T405/488/568/647; Chroma ET535/36m),
+Optical_config_2,Name users will recognize; Illumination type; Light source MF; Excitation_filter; Dichroic/beamsplitter; Emission_filter,Cy5; LED;  Lumencore SOLA 365 Light Engine; Chroma ET645/30x; Chroma 89100bs; Chroma ET700/75m,Yellow (515-laser); laser; 515 nm solid state 40mW at the fiber tip laser line; none; Semrock Di01-T445/515/561;  Chroma ET540/24m,
+Optical_config_3,Name users will recognize; Illumination type; Light source MF; Filter Cube,"DAPI (Quad, Position 2); LED;  Lumencore SOLA 365 Light Engine; Chroma AT350/50x; Chroma 89100bs; Chroma ET455/50m",Red (561 laser); laser; 561nm DPSS 100mW at the fiber tip laser line; none; Semrock Di01-T405/488/568/647; Chroma ET605/52m,
+Optical_config_4,,FITC position 3; LED;  Lumencore SOLA 365 Light Engine; Chroma ET490/20x; Chroma 69002bs; Chroma ET525/50m,Far Red (640 laser); laser; 640 nm solid state 60mW at the fiber tip laser line; none; Semrock Di01-T405/488/568/647; Chroma ET705/72m,
+Optical_config_5,,FITC (Quad position 2); LED;  Lumencore SOLA 365 Light Engine; Chroma ET490/20x; Chroma 89100bs; Chroma ET525/50m,Blue-WF; LED; Lumencore SOLA 395 light engine;  Chroma ET395/25x;  Chroma  T425lpxr;  Chroma ET460/50m,
+Optical_config_6,,FRET (Acceptor); LED;  Lumencore SOLA 365 Light Engine; Chroma ET430/24x; Chroma 69008bs; Chroma ET535/30m,Green-WF; LED; Lumencore SOLA 395 light engine;  Chroma ET470/40x;  Chroma  T495lpxr;  Chroma ET525/50m,
+Optical_config_7,,Red/Cy3 (Position 2); LED;  Lumencore SOLA 365 Light Engine; Chroma ET555/25x; Chroma 89100bs; Chroma ET605/52m,Red-WF; LED; Lumencore SOLA 395 light engine;  Chroma  ET560/40x;  Chroma  T585lpxr;  Chroma  ET630/75m,
+Optical_config_8,,Red/Cy3 (Position 2); LED;  Lumencore SOLA 365 Light Engine; Chroma ET572/35x; Chroma 69002bs; Chroma ET605/52m,Far Red-WF; LED; Lumencore SOLA 395 light engine;  Chroma  ET620/60x;  Chroma  T660lpxr;  Chroma  ET700/75m,
+Optical_config_9,,YFP; LED; SOLA 365; Chroma ET500/20x; Chroma 69008bs; Chroma ET535/30m,,
+Optical_config_10,,,,
+Filter_cube_opts,"Options for filter cubes, separated by semicolons",,DAPI (Chroma ET 49028); GFP (Chroma ET 49002); mCherry (ET Chroma 49008); Cy5 (ET Chroma 49006),
+Excitation_filter_opts,Options for excitation wheel filters; separated by semicolons,"DAPI (Chroma AT350/50X); FITC(Chroma ET490/20X); TRITC (Chroma ET572/35X); CFP (Chroma ET 430/24); YFP (Chroma ET500/20X); Cy5 (Chroma ET 645/30X), Cy3 (Chroma ET 555/25x)",,
+Dichroic_opts,Options for dichroic mirror/beamsplitter/MBS; separated by semicolons,Chroma 89100bs; Chroma 69008bs; Chroma 69002bs,Semrock Di01-T405/488/568/647;  Semrock Di01-T445/515/561 ,405/488/561/640; 405/488; 405-445/514; 405/488/561; BS10/90
+Emission_filter_opts,"Options for emission filters, separated by semicolons",Cy5 (Chroma ET700/75M); Cy3 (Chroma ET605/52M); DAPI (Chroma ET455/50M); YFP (Chroma ET535/30M); ECFP/EYFP (Chroma ET470/24M),Green (Chroma ET525/36m); Yellow (Chroma ET540/24m); Red (Chroma ET605/52m); Far Red (Chroma ET705/72m),
+Camera_MF,"Camera manufacturer and model. If multiple cameras, can indicate that here (e.g., ""Camera 1: Hamamatsu..., Camera 2: Andor..."")",Hamamatsu ORCA-Flash4.0 V3 Digital CMOS camera,Andor Zyla 4.2 Plus sCMOS monochrome camera,
+Bit_depth,"Gain options for cameras, separated by semicolons",12 bit low gain; 12 bit high gain; 16 bit low gain,12 bit Gain 1; 12bit Gain ; 16bit dual gain,
+Confocal_detector_opts,"Options for confocal detectors, separated by semicolons",,Andor Zyla 4.2 Plus sCMOS monochrome camera; 12 bit Gain 1; 12bit Gain ; 16bit dual gain,2 stacked FV3000 cooled 2-channel multialkali PMT detectors; FV3000 Transmitted detector
+Mphoton_detector_opts,"Options for multiphoton detectors, separated by semicolons",,,
+Software,"Acquisition software name, version, and manufacturer","Nikon Elements AR Acquisition Software , version 5.21.03","Nikon Elements AR Acquisition Software , version 5.21.03","Olympus FV31S-SW Acquisition Software, version  2.5.1.228"
+Acknowledgements_grants,"Suggested statement for acknowleding use of the core, including any relevant grants",The authors gratefully acknowledge the MicRoN (Microscopy Resources on the North Quad) Core for their support and assistance in this work.,The authors gratefully acknowledge the MicRoN (Microscopy Resources on the North Quad) Core for their support and assistance in this work.,The authors gratefully acknowledge the MicRoN (Microscopy Resources on the North Quad) Core for their support and assistance in this work.
+Instrumentation_grant,,,,

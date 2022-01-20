@@ -1,0 +1,149 @@
+Metadata	Example	Scope_possible	Category_when_printed	Gsheets_map
+Microscope Stand manufacturer and Model	Leica DMI8; Nikon Ti2	YES	all_Stand	Manufacturer-Model
+***Type	Compound; Stereo	MAYBE	all_Stand	
+"***Commercial/commercial modified, custom modified"		MAYBE	all_Stand	
+***Upright or inverted		MAYBE	all_Stand	
+Scan unit Manufacturer and Model	Yokogawa CSU-W1 	YES	Sconfocal_Stand	Scan_unit_MF
+Pinhole size	50 um; 100 um	YES	Sconfocal_Stand	Pinhole_diameter
+***Pinhole spacing	253 um	MAYBE	Sconfocal_Stand	
+***Number of disks	Single disk; dual disk	MAYBE	Sconfocal_Stand	
+***Disk speed	500 rpm	MAYBE	Sconfocal_Stand	
+Scan unit Manufacturer and Model	Zeiss LSM 780	YES	Pconfocal_Stand	Scan_unit_MF
+Scanning mechanism (galvo vs resonant)	Galvo scanner; Resonant scanner	YES	Pconfocal_Stand	Scanning_mechanism_opts
+Scan directionality	unidirectional; bidirectional	NO	Pconfocal_Stand	
+Scan rate or pixel dwell	1.58 usec/pixel; 2 usec/pixel	NO	Pconfocal_Stand	
+Averaging or sum integration number	no averaging; averaging of 4	NO	Pconfocal_Stand	
+***Scan area	100 um x 100 um	NO	Pconfocal_Stand	
+***Scan or frame size	1024 x1024 pixels; 900 x 900 pixels	NO	Pconfocal_Stand	
+Actual pixel or voxel size	1.58 usec/pixel; 2 usec/pixel	NO	Pconfocal_Stand	
+Pinhole diameter	123 um; 1 A.U. 	YES	Pconfocal_Stand	Pinhole_diameter
+Scan unit Manufacturer and Model	Zeiss LSM 780	YES	Mphoton_Stand	Scan_unit_MF
+Scanning mechanism (galvo vs resonant)	Galvo scanner; Resonant scanner	YES	Mphoton_Stand	Scanning_mechanism_opts
+Scan directionality	unidirectional; bidirectional	NO	Mphoton_Stand	
+Scan rate or pixel dwell	1.58 usec/pixel; 2 usec/pixel	NO	Mphoton_Stand	
+Averaging or sum integration number	no averaging; averaging of 4	NO	Mphoton_Stand	
+***Scan area	100 um x 100 um	NO	Mphoton_Stand	
+***Scan or frame size	1024 x1024 pixels; 900 x 900 pixels	NO	Mphoton_Stand	
+Actual pixel or voxel size	1.58 usec/pixel; 2 usec/pixel	NO	Mphoton_Stand	
+Pinhole diameter if used	123 um; 1 A.U. 	NO	Mphoton_Stand	
+Illumination Shutter Manufacturer and Model	LUDL MAC6000; Unibliz VMC-D1	YES	Zstack_multiPoint_timeLapse_Stand	Illumination_Shutter_MF
+***Illumination Shutter speed	35 msec	NO	Zstack_multiPoint_timeLapse_Stand	
+Stage Manufacturer and Model	Marzhauser; Prior; ASI (Applied Scientific Instrumentation)	YES	Zstack_multiPoint_timeLapse_Stand	Stage_MF
+Linear encoded stage?	Linear encoded; manual stage	NO	Zstack_multiPoint_timeLapse_Stand	
+***Stage precision and speed	"0.1 um precision, 25 mm/sec speed"	NO	Zstack_multiPoint_timeLapse_Stand	
+Focusing device manufacterer and model	Mad City Labs Nano CZ-500 piezo; Nikon Ti Z drive	YES	Zstack_multiPoint_timeLapse_Stand	Stage_MF
+Focusing device type 	"Nosepiece, piezo"	YES	Zstack_multiPoint_timeLapse_Stand	Focusing_Device_MF_opt
+***Focusing device range	250 um; 500 um	NO	Zstack_multiPoint_timeLapse_Stand	
+***Focusing device speed	380 Hz  20%; 2.5 mm/sec	NO	Zstack_multiPoint_timeLapse_Stand	
+***Focusing device precision	0.4 nm	NO	Zstack_multiPoint_timeLapse_Stand	
+Hardware-based Focus maintenance device manufacturer and model	Zeiss Definite Focus; Nikon Perfect Focus System	YES	Zstack_multiPoint_timeLapse_Stand	Focusing_maintenence_hardware
+"Software based focusing maintenance set up (wavelength, range, step size, algorithm)"	"Software based transmitted light 2 pass, 100 um range, 150 nm step size progressive algorithm was used"	MAYBE	Zstack_multiPoint_timeLapse_Stand	
+Excitation/Emission filter wheel Manufacturer and Model	"LUDL MAC500, Sutter Lambda 10-3"	YES	emissionWheel_Stand	Ex_Filter_wheel_MF
+Excitation/Emission filter wheel Location in the Lightpath	in front of the camera; at a camera port; in the infinity space	YES	emissionWheel_Stand	Em_Filter_wheel_MF_and_pos
+***Excitation/Emission filter wheel filter change speed		NO	emissionWheel_Stand	
+Light source manufacturer and model	Excelitas X-Cite 120Q; SOLA SE Light Engine	YES	WF_nolaser_Illumination	Light_source_nonLaser
+Light source type	LED; metal halide	NO	WF_nolaser_Illumination	
+***Light source power output	60 mW; 1W	MAYBE	WF_nolaser_Illumination	
+Laser launch/combiner manufacturer and model	Toptica iChrome MLE	YES	WF_laser_Illumination	Laser_launch_MF
+Laser line/wavelength	405 nm; 488 nm; 561 nm	MAYBE	WF_laser_Illumination	Laser_lines
+Laser type	Gas; Solid State	MAYBE	WF_laser_Illumination	Laser_lines
+Laser modulation	AOM (Acusto-Optical Modulator); directly modulated	MAYBE	WF_laser_Illumination	
+***Laser power output	10 mW; 1W	YES	WF_laser_Illumination	Laser_power
+Laser launch/combiner manufacturer and model	Toptica iChrome MLE	YES	Sconfocal_laser_Illumination	Laser_launch_MF
+Laser line/wavelength	405 nm; 488 nm; 561 nm	NO	Sconfocal_laser_Illumination	Laser_lines
+Laser type 	Gas; Solid State	MAYBE	Sconfocal_laser_Illumination	Laser_lines
+Laser modulation	AOM (Acusto-Optical Modulator); directly modulated	MAYBE	Sconfocal_laser_Illumination	Laser_Modulation
+***Laser power output	10 mW; 1W	YES	Sconfocal_laser_Illumination	Laser_power
+Light source manufacturer and model	Excelitas X-Cite 120Q; SOLA SE Light Engine	YES	Sconfocal_LED_Illumination	Light_source_nonLaser
+LED wavelength	405 nm; 488nm; 647 nm	NO	Sconfocal_LED_Illumination	
+***Light source power output	10 mW; 1W	NO	Sconfocal_LED_Illumination	
+Laser launch/combiner manufacturer and model	Toptica iChrome MLE	YES	Pconfocal_Illumination	Laser_launch_MF
+Tunable laser?	Tunable Lasos Argon laser; WLL2	MAYBE	Pconfocal_Illumination	
+"Pulsed? If yes, pulse length "	"Pulsed, pulse width: 2 ps; Continuous Wave (i.e., CW)"	MAYBE	Pconfocal_Illumination	
+Laser line/wavelength	405 nm; 488nm; 647 nm	YES	Pconfocal_Illumination	Laser_lines
+"Laser type (Argon, solid state)"	Argon; solid state	YES	Pconfocal_Illumination	Laser_lines
+Laser modulation	AOM (Acusto-Optical Modulator); directly modulated	YES	Pconfocal_Illumination	Laser_Modulation
+Laser intensity or % transmission	50 mW laser set to 53% transmission	NO	Pconfocal_Illumination	
+Laser launch/combiner manufacturer and model	Toptica iChrome MLE	YES	Mphoton_Illumination	Laser_launch_MF
+Tunable?	Tunable MaiTai	NO	Mphoton_Illumination	
+"Pulsed? If yes, pulse length "	"Pulsed, pulse width: 2 ps; Continuous Wave (i.e., CW)"	NO	Mphoton_Illumination	
+Laser line/wavelength	760 nm; 1030nm	YES	Mphoton_Illumination	Laser_lines
+Laser type	Argon; solid state	YES	Mphoton_Illumination	Laser_lines
+Laser modulation	AOM (Acusto-Optical Modulator); directly modulated	NO	Mphoton_Illumination	Laser_Modulation
+Dispersion compensation? 	Automated dispersion compensation Deep See	NO	Mphoton_Illumination	
+***Laser power output	Peak output: 1W	YES	Mphoton_Illumination	Laser_power
+Filter manufacturer and product number	"Chroma, Catalog# 49002; Semrock LED-DA/FI/TR/Cy5/Cy7 "	YES	All_Wave	Filter_wheel_opts
+"Filter center wavelength and bandwidth (FWHM), cut on or cut off wavelength"	405/488/640/670 nm; 470/40m; 480/40x	YES	All_Wave	Filter_CWL_FWHM
+Filter coating method	Hard spluttered; soft coated	NO	All_Wave	
+***Additional filters manufacturer and model	Neutral Density; Notch	YES	All_Wave	Other_filters
+"***If tunable wavelength selection, range of wavelengths detected"	490 nm; 488/640/670 nm	NO	All_Wave	
+Filter cube(s) manufacturer and product number(s)	"Chroma, Catalog# 49002; Semrock LED-DA/FI/TR/Cy5/Cy7 "	YES	WF_filterCube_Wave	Filter_cube_opts
+Objective manufacturer	Olympus; Zeiss	NO	all_Optics	
+Objective correction	Plan Apo; Plan Fluor	NO	all_Optics	
+Objective magnification	20X; 10X	NO	all_Optics	
+Objective numerical aperture	0.45 N.A; 1.4 N.A.	NO	all_Optics	
+Specified immersion medium	Air; oil	NO	all_Optics	
+***Objective application 	DIC; Phase; IR; UV	NO	all_Optics	
+***Immersion medium manufacturer and product number (if used)	Zeiss Immersol 518F; Nikon Silicone immersion oil	NO	all_Optics	
+Optovar or relay lens magnification	"Zeiss 2x Optovar, #431008-9903-000"	NO	mag_Optics	
+Contrast enhancing technique or brightfield	Phase; DIC	NO	transmitted_Optics	
+Condenser NA	0.45 N.A.	NO	transmitted_Optics	
+***Additional optics	Analyzer; Polarizer	NO	transmitted_Optics	
+Camera manufacturer and model	Teledyne Photometrics Prime BSI; Andor Zyla 4.2plus; Hamamatsu Flash 4.0 v3	YES	WF_Detection	Camera_MF
+Camera type	CCD; CMOS	YES	WF_Detection	Camera_type
+***Pixel size	6.5 x 6.5 um; 13 x 13 um	YES	WF_Detection	Camera_pixel_size
+***Chip size	512 x 512 pixels; 2048 x 2048 pixels	MAYBE	WF_Detection	
+Binning	2x2 binning	NO	WF_Detection	
+Bit Depth and associated gain 	12 bit gain 4; 16 bit	YES	WF_Detection	Bit_depth
+EM gain (if EMCCD used)	Gain = 100	NO	WF_Detection	
+***Pixel readout rate	10 MHz; 200 MHz	YES	WF_Detection	Camera_readout_rate
+***Dynamic range	2.125	MAYBE	WF_Detection	
+***Readout noise	6^-10e	MAYBE	WF_Detection	
+"***If sCMOS, rolling or global shutter"	Rolling; Overlap; Global	MAYBE	WF_Detection	
+Camera manufacturer and model	Teledyne Photometrics Prime BSI; Andor Zyla 4.2plus; Hamamatsu Flash 4.0 v3	YES	Sconfocal_Detection	Camera_MF
+Camera type	CCD; CMOS	MAYBE	Sconfocal_Detection	Camera_type
+***Pixel size	6.5 x 6.5 um; 13 x 13 um	NO	Sconfocal_Detection	Camera_pixel_size
+***Chip size	512 x 512 pixels; 2048 x 2048 pixels	NO	Sconfocal_Detection	
+Binning	2x2 binning	NO	Sconfocal_Detection	
+Bit Depth and associated gain 	12 bit gain 4; 16 bit	YES	Sconfocal_Detection	Bit_depth
+EM gain (if EMCCD used)	Gain = 100	NO	Sconfocal_Detection	
+***Pixel readout rate	10 MHz; 200 MHz	MAYBE	Sconfocal_Detection	Camera_readout_rate
+***Dynamic range	2.125	MAYBE	Sconfocal_Detection	
+***Readout noise	6^-10e	MAYBE	Sconfocal_Detection	
+"***If sCMOS, rolling or global shutter"	Rolling; Overlap; Global	MAYBE	Sconfocal_Detection	
+"Detector type (PMT, HyD, NDD)"	"PMT, HyD, NDD"	YES	Pconfocal_Detection	Confocal_detector_opts
+"Cathode type (multi-alkali, GaASP)"	"Multi-alkali, GaASP"	NO	Pconfocal_Detection	
+"Voltage (Master Gain, HV, Gain)"	632 V; 244V	NO	Pconfocal_Detection	
+Offset	-5V; 1%	NO	Pconfocal_Detection	
+Digital gain	1.0; 1.6	NO	Pconfocal_Detection	
+***Photon counting mode	Operated in Photon Counting Mode	NO	Pconfocal_Detection	
+"Software manufacturer, name, and version"	Zen Blue v. 1.0; NIS Elements v. 1.4	YES	all_Software	Software
+"If custom, Author and appropiate citation"	Author Name; Github or other code repository	NO	all_Software	
+***Specific aquisition Modules/Macros/apps 	HCA Fixed JOBS; custom JOBS; ZEN Experiment Designer	NO	all_Software	
+State of the shutter during acquisition	Shutter was open during acquisition; Shutter closed during acquisition	NO	all_Software	
+Order of experimental acquisition	"First, a Z-stack was captured, close shutter, then moved to next x,y stage position, open shutter, trigger camera, collect next Z-stack"	NO	multiDim_Software	
+If custom macro: cite or make available.		NO	multiDim_Software	
+"Sequential, simultaneous, or triggered channel/color acquisition"	Images were acquired sequentially; images were acquired in simultaneous channels	NO	multiColor_Software	
+Zstack focusing device	Nikon Ti Z drive 	YES	Z_stack_Software	Focusing_Device_MF_opt
+Zstack range and step size	20 um range 1 um step size	NO	Z_stack_Software	
+Time interval	Images were acquired every 30 seconds	NO	timeLapse_Software	
+Stitching algoritm	NIS Optimal path stitching algoritm	NO	tile_Software	
+"Sample holder type, manufacturer and product number"	Nikon universal stage insert; Prior chambered coverglass slide holder H236 	MAYBE	all_Sample	
+Coverslip grade	#1.5; #1.0	NO	all_Sample	
+"Coverslip coating (type, concentration, detailed protocol)"	Poly-L-lysine coated coverslips	NO	all_Sample	
+"Imaging medium name, manufacturer and product number"	Imaged in milliQ water; imaged in ACSF (recipe)	NO	live_Sample	
+Additional Components/additives to the imaging medium	Nocodozole (Sigma M1404); Phenol Red	NO	live_Sample	
+Environmental chamber manufacturer and model	 	YES	live_Sample	Environmental_chamber_MF
+Temperature and control device	Passive temperature control	NO	live_Sample	
+Gas concentration and control method	 	NO	live_Sample	
+Humidity conditions and control method	50% humidity	NO	live_Sample	
+"If perfusion: perfusion conditions, hardware used "	Perfused in room temperature ASCF exchanged at a rate of 10 mL per minute	NO	live_Sample	
+"Detail protocol: fixitive, concentration of fixitive, fixation conditions (buffers, time, temperature), blocking, binding and hybridization buffer composition, Ab manufacturer, lot number, concentration, probe concentration, binding or hybridization conditions (time, temperature, sequential/simultaneous) "	 	NO	fixed_Sample	
+"Mounting/imaging medium name, manufacturer and product number"	Thermofisher Prolong Gold Antifade Mountant P10144	NO	fixed_Sample	
+***Mounting/imaging medium RI if not specified and curing time. 	1.4 refractive index; 48 hour curing time	NO	fixed_Sample	
+Specific fluorescent protein variant	"eGFP, tdTomato"	NO	FP_Sample	
+"Organic dye name, manufacturer and product number"	JF649 (Janelia Farm 649); MitoTracker Red 	NO	dye_Sample	
+Organic dye concentration and solvent	50 nM	NO	dye_Sample	
+"Transfection reagent, concentration or other method of expression"	Promega FuGENE transfection reagent; Thermo Fisher Lipofectamine 	NO	transfect_Sample	
+Acknowledge the core facilities that facilitated your research	The authors gratefully acknowledge the MicRoN (Microscopy Resources on the North Quad) Core for their support and assistance in this work.	YES	core_Ack	Acknowledgements_grants
+"***Check if specific equipment grants that funded the core facilities also need to be acknowledged (e.g., S10  Shared equipment grants)"	S10 grant: Shared Instrumentation Grant 1S10# funded the instrument in which the data was collected.	YES	core_Ack	Instrumentation_grant

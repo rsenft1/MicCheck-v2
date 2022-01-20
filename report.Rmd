@@ -1,0 +1,122 @@
+---
+title: "&nbsp;"
+geometry: margin=2cm
+output:
+   pdf_document:
+     latex_engine: xelatex
+header-includes:
+  \usepackage[T1]{fontenc}
+  \usepackage{helvet}
+  \renewcommand{\familydefault}{\sfdefault}
+  \usepackage{leading} 
+  \usepackage{colortbl}
+  \usepackage{xcolor}
+  \usepackage{booktabs}
+documentclass: extarticle
+fontsize: 10pt
+params:
+  Stand: Stand
+  Illum: Illum
+  Wave: Wave
+  waveTable: waveTable
+  Optics: Optics
+  opticsTable: opticsTable
+  Detect: Detect
+  Soft: Soft
+  Sample: Sample
+  Ack: Ack
+  showExamples: showExamples
+
+---
+\definecolor{cornflower}{rgb}{0.39,0.58,0.93}
+\newcommand\italicblue[1]{\textcolor{cornflower}{\textit{#1}}}
+\newcommand*\title[1]{%
+\par\noindent
+\colorbox{black}{\makebox[\dimexpr\linewidth-2\fboxsep\relax][c]{\strut\color{white}#1}}%
+\par}
+\leading{11pt}
+```{r setup, include=FALSE}
+library(pander)
+library(stringr)
+library(knitr)
+library(kableExtra)
+options(knitr.table.format = "latex")
+options(knitr.kable.NA = '')
+showExamples <- params$showExamples
+panderOptions('knitr.auto.asis', FALSE)
+boxSym = "  \n![](checkbox.png){width=1.7%}"
+Stand <- params$Stand
+processText <- function(input){
+  input <- input[input != ""]
+  input <- str_replace_all(input,'\\*\\*\\*','*Optional:* ')
+  input <- str_replace_all(input, "&#9744; ", boxSym)
+  input <- gsub("%", "\\%", input,fixed=TRUE)
+  input <- gsub("#", "\\#", input,fixed=TRUE)
+  input <- gsub("^", "^^", input,fixed=TRUE)
+  if(showExamples){
+    lines <- unlist(str_split(input, " </em> <br> "))
+    for(line in lines){
+      splitup <- unlist(str_split(line, "&nbsp; &nbsp; <em style=color:CornflowerBlue>"))
+      cat(splitup[1])
+      cat("\\italicblue{")
+      cat(str_replace_all(splitup[2], "</em> <br>", ""))
+      cat("}")
+    }
+  }else{
+    cat(paste(input))
+  }
+}
+processText(Stand)
+
+```
+\par \vspace{-35mm}
+\noindent\centerline{\Large{Microscopy Metadata Checklist}} 
+\vspace{5mm}
+\title{Microscope Stand and Motorized Components}
+```{r, echo=FALSE, results='asis'}
+processText(Stand)
+```
+\title{Illumination}
+```{r, echo=FALSE, results='asis'}
+processText(params$Illum)
+```
+\title{Wavelength Selection}
+```{r, echo=FALSE, results='asis'}
+processText(params$Wave)
+#kable(as.data.frame(params$waveTable), booktabs = F, row.names = FALSE, caption="Selected Optical Configurations for your microscope")%>% kable_styling(latex_options = c("striped", "scale_down"), stripe_color = "lightgray")
+if(!is.null(params$waveTable)){
+  kable(as.data.frame(params$waveTable), booktabs = T, row.names = FALSE, caption="Selected Optical Configurations for your microscope")%>% kable_styling(latex_options = c("scale_down", "hold_position"))
+}
+
+```
+\title{Optics}
+```{r, echo=FALSE, results='asis'}
+processText(params$Optics)
+if(!is.null(params$opticsTable)){
+  kable(as.data.frame(params$opticsTable), booktabs = T, row.names = FALSE, caption="Selected Objectives for your microscope")%>% kable_styling(latex_options = c("scale_down", "hold_position"))
+}
+  
+```
+\title{Detection}
+```{r, echo=FALSE, results='asis'}
+processText(params$Detect)
+```
+\title{Acquisition Software}
+```{r, echo=FALSE, results='asis'}
+processText(params$Soft)
+```
+\title{Sample Preparation}
+```{r, echo=FALSE, results='asis'}
+processText(params$Sample)
+```
+\title{Acknowledgements}
+```{r, echo=FALSE, results='asis'}
+processText(params$Ack)
+```
+\vfill
+\noindent For more information, check out our paper: 
+
+Montero Llopis, P., Senft, R.A., Ross-Elliott, T.J. et al. Best practices and tools for reporting reproducible fluorescence microscopy methods. Nat Methods 18, 1463–1476 (2021). https://doi.org/10.1038/s41592-021-01156-w
+
+
+\noindent Microscopy Metadata Checklist Generator (MicCheck) v2 developed by Rebecca Senft (2022)
